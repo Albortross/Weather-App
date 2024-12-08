@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('download.jpeg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    background-color: #dedef1;
+    border: 1px solid red;
+    border-radius: 10px; 
+    padding: 20px; 
+    max-width: 90%; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; 
+}
+
+.card input {
+    text-align: center;
+    width: 100%;
+    height: 40px; 
+    font-size: 16px; 
+    font-weight: 700;
+    border-radius: 5px;
+    color: rgb(36, 31, 31);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 0 10px; 
+}
+
+.card button {
+    height: 40px; 
+    width: 100%;
+    font-size: 16px; 
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 126, 96);
+    color: white;
+    border-radius: 23px;
+    border: none; 
+    cursor: pointer; 
+}
+
+
+.card button:hover {
+    background-color: rgb(28, 100, 72);
+}
+
+
+.weatherCard {
+    border: 2px solid green;
+    border-radius: 10px; 
+    padding: 10px; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.weatherCard img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.weatherCard #name {
+    font-size: 14px;
+    color: #333; 
+    margin-top: 10px; 
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 15px; 
+    }
+
+    .card input,
+    .card button {
+        font-size: 14px; 
+        height: 40px; 
+    }
+}
